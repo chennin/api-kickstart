@@ -52,7 +52,7 @@ class EdgeGridConfig():
         		parser.add_argument('--' + argument)
         		arguments[argument] = config_values[argument]
         try:
-            args = parser.parse_args()
+            args = parser.parse_known_args()
         except:
             sys.exit()
         arguments = vars(args)
